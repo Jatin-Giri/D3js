@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SVG Pratice</title>
+    <style>
+      html {
+        color-scheme: dark;
+      }
+      svg {
+        background-color: seagreen;
+      }
+      svg:nth-child(2) {
+        background-color: red;
+      }
+      circle:nth-child(3) {
+        fill: red;
+      }
+    </style>
+  </head>
+  <body>
+    <svg width="450" height="300">
+      <circle cx="50" cy="50" r="50"></circle>
+      <circle cx="150" cy="50" r="30" fill="slateblue"></circle>
+      <circle cx="150" cy="50" r="20" fill="red"></circle>
+      <circle cx="150" cy="50" r="10" fill="slateblue"></circle>
+      <circle cx="250" cy="50" r="20" stroke="green" stroke-width="4" ></circle>
+
+      <rect
+        x="1"
+        y="1"
+        width="350"
+        height="130"
+        fill="none"
+        stroke="red"
+        stroke-width="4"
+      ></rect>
+
+      <rect
+        x="150"
+        y="150"
+        width="150"
+        height="50"
+        fill="dodgerblue"
+        stroke="red"
+        stroke-width="4"
+      ></rect>
+
+      <line x1="0" y1="0" x2="130" y2="230" stroke="yellow"stroke-width="4"></line>
+
+      <path fill="red" d="M200,200L290,250L350,170" stroke="coral"stroke-width="4" ></path>
+
+      <path fill="none" d="M10,220L129,125l175,17" stroke="coral"stroke-width="4"></path>
+    </svg>
+
+    <svg width = "600" height = "300"></svg>
+  </body>
+</html>
