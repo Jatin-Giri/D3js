@@ -18,6 +18,20 @@
       circle:nth-child(3) {
         fill: red;
       }
+      #svg{
+        background-color: cadetblue;
+        transition: all 2s;
+      }
+      #svg:hover{
+        background-color: brown;
+      }
+      .c{
+        transition: all 1.5s;
+      }
+      .c:hover{
+        transform-origin: center center;
+        transform: rotateZ(360deg);
+      }
     </style>
   </head>
   <body>
@@ -64,10 +78,14 @@
       <line x1="0" y1="75" x2="600" y2="75" stroke="skyblue"stroke-width="20"></line>
       <!-- <line x1="0" y1="30" x2="600" y2="30" stroke="dodgerblue"stroke-width="15"></line> -->
 
-      <!-- <line x1="0" y1="0" x2="600" y2="0" stroke="blue"stroke-width="10"></line> -->
-      <!-- <line x1="0" y1="0" x2="600" y2="0" stroke="blue"stroke-width="10"></line> -->
 
 
+    </svg>
+    <svg id="svg"  width = "600" height = "400">
+      <circle class="c" cx="300" cy="200" r="150"></circle>
+      <circle class="c" cx="300" cy="200" r="60" fill="grey"></circle>
+      <circle class="c" cx="300" cy="200" r="48" fill="red"></circle>
+      <circle class="c" cx="300" cy="200" r="6"></circle>
     </svg>
   </body>
 </html>
