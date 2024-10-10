@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <style>
+      html {
+        color-scheme: Dark;
+      }
+      body {
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // const width = 960;
+      // const height = 500;
+
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      
+      const n = 100;
+
+      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.setAttribute("width", width);
+      svg.setAttribute("height", height);
+      document.body.appendChild(svg);
+
+      for (let i = 0; i < n; i++) {
+        const rect = document.createElementNS(
+          "http://www.w3.org/2000/svg",
+          "rect"
+        );
+        rect.setAttribute("y", (i*20));
+        rect.setAttribute("width", width);
+        rect.setAttribute("height", 10);
+        svg.appendChild(rect);
+      }
+
+
+
+    </script>
+  </body>
+</html>
